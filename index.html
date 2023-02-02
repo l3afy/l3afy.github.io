@@ -28,13 +28,13 @@
 
 
 <p id="demo"></p>
-<h4>Provavelmente esqueci-me disto e passou todo este tempo</h4>
+<h2>Provavelmente esqueci-me disto e passou todo este tempo</h2>
 
 
 
 <script>
 // Set the date we're counting down to
-var countDownDate = new Date("Feb 2, 2022 08:37:00").getTime();
+var countDownDate = new Date("Feb 2, 2023 08:37:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -56,11 +56,6 @@ var x = setInterval(function() {
   document.getElementById("demo").innerHTML = years + "y " +  days + "d " + hours + "h "
   + minutes + "m " + seconds + "s ";
     
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
 }, 1000);
 </script>
 
