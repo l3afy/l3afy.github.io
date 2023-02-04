@@ -1,36 +1,56 @@
 <!DOCTYPE html>
-<html class="text-center" lang="pt-br">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Victor B. Lino</title>
-    <link rel="icon" type="image/webp" sizes="96x96" href="assets/img/favicon.ico">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
-    <link rel="stylesheet" href="assets/bootstrap/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/bootstrap/fonts/ionicons.min.css">
-    <link rel="stylesheet" href="assets/bootstrap/css/styles.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
+    <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <title>Little tests site</title>
 </head>
 
-<body>
-    <div class="text-center profile-card" style="margin:15px;background-color:#ffffff;">
-        <div class="bg-white bg-gradient profile-card-img" style="background-image:url(&quot;iceland.jpg&quot;);height:150px;background-size:cover;"></div>
-        <div><img class="rounded-circle" style="border-radius: 50%;" src="/assets/img/Victor.jpg" height="150px" />
-            <h3><br>Victor B. Lino</h3>
-            <p style="padding:20px;padding-bottom:0;padding-top:5px;">Twitch Mod in LOUD Babi and Cellbit<br>Auxiliar and Detetive in discord.gg/cellbit</p>
-        </div>
+<body style="background-color: black;">
+    <div>
+        <h1 style="color: white;">Page 2. :)</h1>
+        <img src="https://cdn.discordapp.com/emojis/568937986658402323.webp?size=240&quality=lossless" alt="é 2">
     </div>
-    <footer class="footer-basic">
-        <p class="visually-hidden copyright">ADMVicli&nbsp;© 2022<br></p>
-        <div class="social"><a href="https://github.com/admvicli"><i class="icon ion-social-github"></i></a><a href="https://twitter.com/victorbalino"><i class="icon ion-social-twitter"></i></a><a href="https://twitch.tv/admvicli"><i class="icon ion-social-twitch-outline"></i></a><a href="https://discord.com/users/392099429768888351"><i class="fab fa-discord"></i></a></div>
-        <p class="copyright">Victor B. Lino © 2022</p>
-    </footer>
+
+
+    <nav class="navbar fixed-bottom navbar-expand-lg bg-white navbar-dark">
+        I probably forgot about this for a long time, so I'll just set a timer here just for funzies - <span id="demo"
+            class="pl-1"></span>
+    </nav>
+
     <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Feb 2, 2023 08:37:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = now - countDownDate;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="demo"
+            document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+                + minutes + "m " + seconds + "s ";
+
+        }, 1000);
+    </script>
+
 </body>
 
 </html>
